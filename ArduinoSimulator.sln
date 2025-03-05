@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoSimulator", "ArduinoSimulator\ArduinoSimulator.csproj", "{047E540A-84EE-40AB-BCB6-AF641D461A12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keyboard.Console", "Keyboard.Console\Keyboard.Console.csproj", "{698BAD76-18A8-4B92-BCCA-C4BB249B76BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{047E540A-84EE-40AB-BCB6-AF641D461A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047E540A-84EE-40AB-BCB6-AF641D461A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047E540A-84EE-40AB-BCB6-AF641D461A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047E540A-84EE-40AB-BCB6-AF641D461A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698BAD76-18A8-4B92-BCCA-C4BB249B76BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698BAD76-18A8-4B92-BCCA-C4BB249B76BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698BAD76-18A8-4B92-BCCA-C4BB249B76BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698BAD76-18A8-4B92-BCCA-C4BB249B76BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{698BAD76-18A8-4B92-BCCA-C4BB249B76BF} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20ABC3A6-CFDB-4743-891A-3160CA4C5702}
+	EndGlobalSection
+EndGlobal
