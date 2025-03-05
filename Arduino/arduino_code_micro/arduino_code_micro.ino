@@ -64,6 +64,12 @@ int wheel;
 int mouse_button;
 int mouse_status;
 
+// keyboard
+int count_chars;
+int char_int;
+int sleep;
+
+
 void msg(String desc, int status) {
   Serial.print(desc + ": ");
   Serial.print(status);
@@ -105,6 +111,27 @@ void loop() {
         }
         break;
       case 3:
+        count_chars = Serial.parseInt();
+        msg("count_chars", count_chars);
+        sleep = Serial.parseInt();
+        if (count_chars > 0) {
+          char array_char_local[count_chars];
+          for (int i = 0; i < count_chars; i++) {
+            char_int = Serial.parseInt();
+            array_char_local[i] = char_int;
+            Serial.print((char)char_int);
+          }
+
+          for (int i = 0; i < count_chars; i++) {
+            Keyboard.write(array_char_local[i]);
+            delay(sleep);
+          }
+        }
+
+
+
+
+
         break;
     }
     delay(delay_p);

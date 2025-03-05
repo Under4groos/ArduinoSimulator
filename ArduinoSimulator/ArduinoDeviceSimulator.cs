@@ -50,15 +50,32 @@ namespace ArduinoSimulator
                 throw;
             }
             #endregion
+        }
 
+        #region Keyboard
 
+        public void KeyboardWriteText(string text, int sleep = 0, int delay = 0)
+        {
+            if (string.IsNullOrEmpty(text))
+                return;
+            SendInfo(3, delay);
+            var chars_ = text.Select(c => (int)c).ToArray();
 
+            WriteLineInt(chars_.Count());
+            WriteLineInt(sleep);
+            foreach (char item in chars_)
+            {
+                WriteLineInt(item);
+            }
 
 
         }
+        #endregion
+
+
         #region Mouse
 
-        public void LocalMouseMove(int x = 0, int y = 0, int wheel = 0, int delay = 5)
+        public void MouseMove(int x = 0, int y = 0, int wheel = 0, int delay = 5)
         {
             SendInfo(0, delay);
             WriteLineInt(x);
@@ -66,7 +83,7 @@ namespace ArduinoSimulator
             WriteLineInt(wheel);
         }
 
-        public void Click(MouseKeys keys, MouseStatus mouseStatus = MouseStatus.click, int delay = 5)
+        public void MouseClick(MouseKeys keys, MouseStatus mouseStatus = MouseStatus.click, int delay = 5)
         {
             SendInfo(1, delay);
 

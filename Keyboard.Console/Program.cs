@@ -10,23 +10,27 @@ using (ArduinoDeviceSimulator simulator = new ArduinoDeviceSimulator("COM17", Re
 
     while (true)
     {
+        string readLine = Console.ReadLine();
+        simulator.KeyboardWriteText(readLine, delay: 10);
+
+
 
 
 
         #region Mouse
-        Console.ReadLine();
-        simulator.Click(
-            ArduinoSimulator.Enums.MouseKeys.MOUSE_LEFT,
-            ArduinoSimulator.Enums.MouseStatus.press
-            );
-        simulator.LocalMouseMove(0, 100);
+        //Console.ReadLine();
+        //simulator.MouseClick(
+        //    ArduinoSimulator.Enums.MouseKeys.MOUSE_LEFT,
+        //    ArduinoSimulator.Enums.MouseStatus.press
+        //    );
+        //simulator.MouseMove(0, 100);
 
-        simulator.Click(
-            ArduinoSimulator.Enums.MouseKeys.MOUSE_LEFT,
-            ArduinoSimulator.Enums.MouseStatus.release
-            );
+        //simulator.MouseClick(
+        //    ArduinoSimulator.Enums.MouseKeys.MOUSE_LEFT,
+        //    ArduinoSimulator.Enums.MouseStatus.release
+        //    );
 
-        simulator.LocalMouseMove(0, -100);
+        //simulator.MouseMove(0, -100);
         #endregion
 
 
