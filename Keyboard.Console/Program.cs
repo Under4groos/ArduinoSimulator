@@ -20,10 +20,10 @@ using (ArduinoDeviceSimulator simulator = new ArduinoDeviceSimulator("COM17", Re
 
         #region Mouse
         //Console.ReadLine();
-        simulator.MouseClick(
-            ArduinoSimulator.Enums.MouseKeys.MOUSE_LEFT,
-            ArduinoSimulator.Enums.MouseStatus.press
-            );
+        //simulator.MouseClick(
+        //    ArduinoSimulator.Enums.MouseKeys.MOUSE_LEFT,
+        //    ArduinoSimulator.Enums.MouseStatus.press
+        //    );
         //simulator.MouseMove(0, 100);
 
         //simulator.MouseClick(
